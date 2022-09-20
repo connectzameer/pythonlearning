@@ -8,5 +8,7 @@ conn = psycopg2.connect(database="oltpdb",
 
 cursor = conn.cursor()
 cursor.execute("SELECT * FROM cobrand")
-print(cursor.fetchone())
+#print(cursor.fetchone())
 print(cursor.fetchall())
+#print(cursor.fetchmany(size=5))
+
